@@ -4,36 +4,43 @@ var who = "wooden shoe";
 var joke = "Wooden shoe like to know!";
 var expected = who + " who?";
 
-/* Simple version */
-function knock(){
-  prompt("Knock Knock!");
-  prompt(who);
-  alert(joke);
+function sayHello() {
+	prompt("helloWorld");
+	var answer = prompt("hello");
+	var expected = hello + "Hello";
+	if (answer==expected) alert ("good day");
 }
 
-/* Better */
-function knockCheck(){
-  prompt("Knock Knock!");
-  var answer = prompt(who);
-  var expected = who + " who?";
-  if (answer == expected) alert(joke);
-  else alert("Huh?");
-}
+// /* Simple version */
+// function knock(){
+  // prompt("Knock Knock!");
+  // prompt(who);
+  // alert(joke);
+// }
 
-/* Best */
-function knockAgain(){
-  prompt("Knock Knock!");
-  var answer = prompt(who);
-  var expected = who + " who?";
-  if (answer == expected) alert(joke);
-  // this next line is "recursion". 
-  else askAgain();
-}
+// /* Better */
+// function knockCheck(){
+  // prompt("Knock Knock!");
+  // var answer = prompt(who);
+  // var expected = who + " who?";
+  // if (answer == expected) alert(joke);
+  // else alert("Huh?");
+// }
 
-function askAgain() {
-  alert("Huh?");
-  var answer = prompt(who);
-  // what is the difference between = and ==?
-  if (answer == expected) alert(joke);
-  else askAgain();
-}
+// /* Best */
+// function knockAgain(){
+  // prompt("Knock Knock!");
+  // var answer = prompt(who);
+  // var expected = who + " who?";
+  // if (answer == expected) alert(joke);
+  // // this next line is "recursion". 
+  // else askAgain();
+// }
+
+// function askAgain() {
+  // alert("Huh?");
+  // var answer = prompt(who);
+  // // what is the difference between = and ==?
+  // if (answer == expected) alert(joke);
+  // else askAgain();
+// }
